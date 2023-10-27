@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -143,11 +146,13 @@
 .success h1 {
   font-size: 24px;
   margin: 10px 0;
-  line-height: 23px;
+  line-height: 25px;
 }
 
 .success p {
   font-size: 10px;
+  color: hsl(234, 29%, 20%);
+  line-height: 18px;
 }
 
 .success button {
@@ -186,6 +191,8 @@
 @media (max-width: 375px) {
   .card {
     flex-direction: column;
+    padding: 0;
+    max-width: 300px;
   }
 
   .left {
@@ -198,5 +205,29 @@
     background-size: cover; */
     /* width: 100%; */
     order: 1;
+  }
+
+  .success {
+    height: 100vh;
+    max-width: 300px;
+  }
+
+  .success img {
+    width: 50px;
+    margin: 20% 0 10%;
+  }
+
+  .success h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .success p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .success button {
+    margin-top: 50%;
   }
 }
